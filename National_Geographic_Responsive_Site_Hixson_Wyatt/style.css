@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #ffffff url('images/NaGeo_Logo.jpg') no-repeat center top 50px;
+  background-size: cover;
+  color: #bd6969;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: #111;
+  padding: 1rem 0;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid #ffd700;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #ffd700;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1.5rem;
+  border-left: 5px solid #ffd700;
+  border-radius: 5px;
+}
+
+.wide {
+  flex-basis: 100%;
+}
+
+/* Medium screen (side-by-side layout) */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex: 1 1 45%;
+  }
+
+  .wide {
+    flex: 1 1 100%;
+  }
+}
